@@ -1,0 +1,304 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: poppins,sans-serif;
+}
+
+.header
+{
+    background:transparent;
+    position: absolute;
+    top:10px;
+    bottom: 10px;
+    left: 20px;
+    height:150px;
+    width:100%;
+}
+.header h1 
+{
+    font-size: 60px;
+
+    
+}
+
+            /* main container */
+.main-container
+{
+    width:100%;
+    height:100vh;
+    background-color: white;
+    position:relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+                        /* left section */
+
+.left-section
+{
+    border:0px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    margin-top: 50px;
+    width:100%;
+    max-width: 40%;
+    height: 82%;
+
+    background:url(left-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 6;
+}
+p 
+{
+   text-align: center;
+    color:#546302;
+    font-size: 1.5rem;
+    padding:0 20px;
+    margin-left:45px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+
+    position:absolute;
+    top:20%;
+    
+}
+
+                /* rightt section */
+
+.right-section
+{
+
+    border:0px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    margin-top: 50px;
+    width:100%;
+    max-width: 40%;
+    height: 82%;
+
+    background-color: white;
+
+    z-index: 7;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+        /* login section */
+
+.login-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height:700px;
+    gap:3%;
+    
+    /* background-color: seagreen; */
+}
+
+.login-heading
+{
+    margin-bottom: 40px;
+    font-size: 40px;
+    color:#546302;
+}
+
+            /* input box  */
+
+.input-container
+{
+    width:100%;
+    height:35px;
+
+    /* background-color: yellow; */
+
+    margin-bottom:0px;
+    border:none;
+    outline:none;
+    border-bottom:.3px solid grey;
+}
+
+.input-container input
+{
+    width:100%;
+    height:35px;
+    border:none;
+    outline:none;
+    transition: ease .5s;
+}
+
+.input-container input:hover
+{
+    transform: translate(20px);
+    
+ 
+}
+input::placeholder
+{
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+
+input[type=text],input[type=password]
+{
+    padding:10px ;
+    letter-spacing: 1.5px;
+}
+
+            /* remember-and-forgot section */
+
+.remember-and-forgot 
+{
+    width:100%;
+    height: 40px;
+    /* background-color: yellow; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:0 20px;
+    
+}
+
+.remember-and-forgot .remember
+{
+    display: inline-block;
+    color: #546302;
+}
+.remember-and-forgot .remember input[type=checkbox]
+{
+    margin-right:5px;
+}
+
+
+                /* forgot a link section  */
+
+.forgot a
+{
+    font-weight: bold;
+    color:#546302;
+    text-decoration: none;
+}
+
+.forgot a:hover 
+{
+    color:#546302;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    
+}
+
+            /* login button container */
+
+.login-button-container
+{
+    width:100%;
+    height:50px;
+    transition:  .5s;
+    border-radius: 30px;
+}         
+.btn
+{
+    width:100%;
+    height:50px;
+    background: none;
+    border:0.3px solid #87924e;
+    border-radius: 30px;
+   
+}
+
+
+
+.btn a
+{
+   
+    color:#546302;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 4px;
+    
+}
+
+.login-button-container:hover
+{
+    color: white;
+    background: linear-gradient(to right,#6b7828,#8c9658,#ced2b7,#dee1cf,#6b7828);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: ease-in-out .2s;
+}
+.login-button-container .btn a:hover
+{
+    color:white;
+    transition: 0.5s;
+}
+
+
+            /* signup section  */
+
+.signup-section
+{
+    width:100%;
+    /* background-color: yellow; */
+    color:#546302;
+    font-size: 1.2rem;
+
+    letter-spacing: 2px;
+    word-spacing: 1.3px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    
+
+}
+.or
+{
+    padding-bottom: 10px;
+}
+.signup 
+{
+    padding-bottom: 5px;
+
+}
+
+.signup a 
+{
+   
+    font-weight: bold;
+    margin-left:5px;
+    text-decoration: none;
+    color:#546302;
+    
+}
+.signup a:hover
+{
+    text-decoration: underline;
+
+}
